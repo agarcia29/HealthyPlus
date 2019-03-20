@@ -7,114 +7,109 @@
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingTop="16dp"
+    android:paddingTop="2dp"
     tools:context=".Login"
     android:orientation="vertical">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:text="Nombre y Apellidos"
-                android:textSize="20dp"/>
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
             <EditText
                 android:id="@+id/edt_nombre"
                 android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginBottom="10dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
-                android:text="Correo electronico"
-                android:textSize="20dp" />
+                android:hint="Nombre" />
 
             <EditText
                 android:id="@+id/edt_correo"
                 android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginBottom="10dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
-                android:text="Contraseña"
-                android:textSize="20dp" />
+                android:hint="Correo" />
 
             <EditText
                 android:id="@+id/edt_pass"
-                android:layout_width="230dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
+                android:hint="Contraseña"
                 android:inputType="textPassword" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:text="Año de nacimiento"
-                android:textSize="20dp" />
 
             <EditText
                 android:id="@+id/edt_fecha"
-                android:layout_width="100dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
-                android:inputType="number"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:text="Direccion"
-                android:textSize="20dp" />
+                android:hint="Edad"
+                android:inputType="number" />
 
             <EditText
                 android:id="@+id/edt_dir"
-                android:layout_width="230dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:hint="Direccion" />
+
+            <EditText
+                android:id="@+id/edt_peso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:hint="Peso Kg"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/edt_estatura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:hint="Altura m"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/edtSex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:hint="Sexo" />
+
+            <EditText
+                android:id="@+id/edt_allergy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:hint="Alergias" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
                 <Button
                     android:id="@+id/btnCancelar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cancelar"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_marginRight="20dp"
+                    android:text="Cancelar" />
+
                 <Button
                     android:id="@+id/btnAceptarRegistro"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptar"/>
+                    android:text="Aceptar" />
             </LinearLayout>
-
         </LinearLayout>
-    </ScrollView>
 </LinearLayout>

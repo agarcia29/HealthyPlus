@@ -18,7 +18,7 @@
         />
 
     <LinearLayout
-        android:layout_width="193dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="horizontal"
@@ -32,14 +32,14 @@
 
         <EditText
             android:id="@+id/user_login"
-            android:layout_width="146dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"/>
 
     </LinearLayout>
     <LinearLayout
         android:layout_gravity="center"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingTop="10dp">
@@ -50,7 +50,7 @@
             />
         <EditText
             android:id="@+id/pass_login"
-            android:layout_width="120dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:hint="*****"/>
@@ -74,6 +74,13 @@
             android:layout_height="wrap_content"
             android:text="Iniciar"/>
     </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logoletra"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
 
 
 

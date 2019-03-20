@@ -15,30 +15,21 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-      /*  InicioFragment demoFragment = new InicioFragment();
-        position = position+1;
-        Bundle bundle = new Bundle();
-        bundle.putString("message", "Fragment: "+position);
-        demoFragment.setArguments(bundle);
-        return demoFragment;*/
+
         switch (position){
             case 0:
                 InicioFragment inicioFragment = new InicioFragment();
                 return inicioFragment;
             case 1:
-                ForoFragment foroFragment = new ForoFragment();
-                return foroFragment;
-            case 2:
                 PerfilFragment perfilFragment = new PerfilFragment();
                 return perfilFragment;
-
-        }
+           }
         return null;
     }
 
     @Override
     public int getCount() {
-        return 3;
+        return 2;
     }
 
     @Nullable
@@ -48,8 +39,6 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return "Inicio";
             case 1:
-                return "Foro";
-            case 2:
                 return "Perfil";
         }
         return null;
